@@ -4,6 +4,7 @@ const connectDb = require('./config/db');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
+//import flash from 'connect-flash';
 
 const app = express();
 const port    = process.env.PORT;

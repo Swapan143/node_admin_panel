@@ -225,7 +225,8 @@ const forgotPasswordCheck = asyncHandler(async(req, res) =>
     } 
     catch (error) 
     {
-        req.flash('error','Something went wrong!');
+        console.log(error);
+        req.flash('error','Something went wronggggg!');
         res.redirect('/admin/forgot-password');
         return;
     }
